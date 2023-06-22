@@ -1,0 +1,121 @@
+// unsplash__wrap
+.movie__wrap {
+  overflow: hidden;
+}
+.movie__inner {
+  height: 700px;
+  // overflow: hidden;
+
+  .movie__text {
+    > h3 {
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    > p {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    > a {
+      border-radius: 30px;
+      font-size: 18px;
+      margin-bottom: 100px;
+    }
+  }
+  .movie__item {
+    // width: 200%;
+    position: absolute;
+    display: flex;
+
+    > div {
+      margin-right: 20px;
+      width: 200px;
+
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+.movie__slider {
+  height: 70vh;
+
+  img {
+  }
+}
+
+// movie__tag
+.movie__tag {
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    button {
+      border: 1px solid #bfc0c5;
+      @include border(10px);
+      padding: 10px 20px;
+      margin: 0 10px;
+    }
+  }
+}
+
+// movie__cont
+.movie__cont {
+  ul {
+    // column-count: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      width: 24%;
+      margin-bottom: 30px;
+      position: relative;
+
+      .title {
+        font-size: 20px;
+
+        &hover {
+          text-decoration: underline;
+          text-underline-position: under;
+        }
+      }
+      .star {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 30px;
+        font-size: 12px;
+        font-weight: 800;
+        color: #4d0000;
+      }
+    }
+  }
+}
+// movie__search
+.movie__search {
+  margin-bottom: 50px;
+  text-align: center;
+  input {
+    border: 1px solid #e8ecf2;
+    font-size: 16px;
+    padding: 10px 20px;
+    @include border(50px);
+    min-width: 300px;
+    margin-right: 10px;
+  }
+  button {
+    @include button(#56d8c2, #fff);
+    @include border(50px);
+  }
+}
