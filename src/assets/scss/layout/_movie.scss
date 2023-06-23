@@ -121,6 +121,7 @@
 }
 
 .movie__slider {
+  overflow: hidden;
   .swiper {
     width: 100vw;
     height: 70vh;
