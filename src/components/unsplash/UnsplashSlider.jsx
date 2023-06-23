@@ -1,12 +1,13 @@
 import React from "react";
 
-import { Navigation, Pagination, Autoplay, EffectCreative } from "swiper";
+import { Navigation, Pagination, Autoplay, EffectCube } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/bundle";
+import "swiper/css/effect-cube";
 
 const UnsplashImg = ({ image }) => {
   return (
@@ -18,28 +19,25 @@ const UnsplashImg = ({ image }) => {
 
 const UnsplashSlider = ({ images }) => {
   return (
-    <div className="movie__slider">
+    <div className="unsplash__slider">
       <Swiper
-        effect={"creative"}
-        creativeEffect={{
-          prev: {
-            shadow: true,
-            translate: [0, 0, -400],
-          },
-          next: {
-            translate: ["100%", 0, 0],
-          },
+        effect={"cube"}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.89,
         }}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={"5"}
+        slidesPerView={"1"}
         spaceBetween={30}
         loop={true}
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay, Navigation, Pagination, EffectCreative]}
+        modules={[Autoplay, Navigation, Pagination, EffectCube]}
       >
         {images.map((image, index) => (
           <SwiperSlide>

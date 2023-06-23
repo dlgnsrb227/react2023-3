@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Contents from "../layout/Contents";
 import ContTitle from "../layout/ContTitle";
 
-import YoutubeSlider from "../youtube/YoutubeSlider";
+// import YoutubeSlider from "../youtube/YoutubeSlider";
 import YoutubeSearch from "../youtube/YoutubeSearch";
 import YoutubeTag from "../youtube/YoutubeTag";
 import YoutubeCont from "../youtube/YoutubeCont";
@@ -32,7 +32,7 @@ const YoutubePage = () => {
     <>
       <Contents>
         <ContTitle title="youtube" />
-        <YoutubeSlider />
+        {/* <YoutubeSlider /> */}
         <YoutubeSearch onSearch={search} />
         <YoutubeTag onSearch={search} />
         <YoutubeCont youtubes={youtubes} />
