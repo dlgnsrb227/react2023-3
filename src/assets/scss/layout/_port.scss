@@ -1,152 +1,150 @@
 // port__wrap
-.port__wrap {}
+.port__wrap {
+}
 .port__inner {
+  .port__btn {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 
-    .port__btn {
-        width: 50%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
+    > a {
+      font-size: 20px;
+      display: inline-block;
+      padding: 7px 50px;
+      border: 1px solid #d9e4ff;
+      background-color: #eaf0ff;
+      color: #666;
+      border-radius: 50px;
 
-        > a {
+      &.active {
+        background-color: #d9e4ff;
+        border: 1px solid #a2bcff;
+        color: #232323;
+      }
+    }
+  }
+  .port__cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .port {
+      width: 32%;
+      margin-bottom: 30px;
+
+      figure > img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .port__header {
+      }
+      .port__body {
+        span {
+          display: flex;
+          text-align-last: left;
+          padding: 15px 0;
+
+          > img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+          }
+          > div > h4 {
             font-size: 20px;
-            display: inline-block;
-            padding: 7px 50px;
-            border: 1px solid #D9E4FF;
-            background-color: #EAF0FF;
+            font-weight: 600;
+            margin-bottom: 5px;
+          }
+          > div > p {
             color: #666;
-            border-radius: 50px;
-
-            &.active {
-                background-color: #D9E4FF;
-                border: 1px solid #A2BCFF;
-                color: #232323;
-            }
+            font-weight: 600;
+          }
         }
+      }
     }
-    .port__cont {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        .port {
-            width: 32%;
-            margin-bottom: 30px;
-
-            figure > img {
-                width: 100%;
-                border-radius: 10px;
-            }
-            .port__header {}
-            .port__body {
-
-                span {
-                    display: flex;
-                    text-align-last: left;
-                    padding: 15px 0;
-
-                    > img {
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
-                        margin-right: 15px;
-                    }
-                    > div > h4 {
-                        font-size: 20px;
-                        font-weight: 600;
-                        margin-bottom: 5px;
-                    }
-                    > div > p {
-                        color: #666;
-                        font-weight: 600;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
 
 // portCont
 .portfolio__inner {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
 
-    .leftside {
+  .leftside {
+    .left__work {
+      padding-top: 500px;
+      position: relative;
 
-        .left__work {
-            padding-top: 500px;
-            position: relative;
+      img {
+        background-color: #000;
+        border-radius: 20px;
+      }
 
-            img {
-                background-color: #000;
-                border-radius: 20px;
-            }
-
-            h3{
-                position: absolute;
-                top: 68%;
-                right: -200px;
-                font-size: 65px;
-                font-weight: 800;
-                color: aliceblue;
-                mix-blend-mode: difference;
-                em {
-                    font-weight: 100;
-                    font-style: italic;
-                    color: #000;
-                    mix-blend-mode: difference;
-                }
-            }
-            p {
-                margin-top: 10px;
-                text-align: right;
-                font-size: 18px;
-            }
-            &.work3 {
-                h3{
-                    right: -130px;
-                }
-            }
+      h3 {
+        position: absolute;
+        top: 68%;
+        right: -200px;
+        font-size: 65px;
+        font-weight: 800;
+        color: aliceblue;
+        mix-blend-mode: difference;
+        em {
+          font-weight: 100;
+          font-style: italic;
+          color: #000;
+          mix-blend-mode: difference;
         }
-    }
-    .rightside {
-
-        .right__work {
-            padding-bottom: 500px;
-            position: relative;
-
-            h3{
-                position: absolute;
-                top: 15%;
-                left: -275px;
-                font-size: 65px;
-                font-weight: 800;
-                color: #000;
-                em {
-                    font-weight: 100;
-                    font-style: italic;
-                    color: aliceblue;
-                }
-            }
-            p {
-                margin-top: 10px;
-                text-align: right;
-                font-size: 18px;
-            }
-            &.work5 {
-                h3{
-                    top: 19%;
-                    left: -160px;
-                }
-            }
-            &.work6 {
-                h3{
-                    top: 10%;
-                    left: -480px;
-                }
-            }
+      }
+      p {
+        margin-top: 10px;
+        text-align: right;
+        font-size: 18px;
+      }
+      &.work3 {
+        h3 {
+          right: -130px;
         }
+      }
     }
+  }
+  .rightside {
+    .right__work {
+      padding-bottom: 500px;
+      position: relative;
+
+      h3 {
+        position: absolute;
+        top: 15%;
+        left: -275px;
+        font-size: 65px;
+        font-weight: 800;
+        color: #000;
+        em {
+          font-weight: 100;
+          font-style: italic;
+          color: aliceblue;
+        }
+      }
+      p {
+        margin-top: 10px;
+        text-align: right;
+        font-size: 18px;
+      }
+      &.work5 {
+        h3 {
+          top: 19%;
+          left: -160px;
+        }
+      }
+      &.work6 {
+        h3 {
+          top: 10%;
+          left: -480px;
+        }
+      }
+    }
+  }
 }
