@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
 const MovieSearch = ({ onSearch }) => {
   const inputRef = useRef();
@@ -7,7 +7,7 @@ const MovieSearch = ({ onSearch }) => {
     onSearch(value);
   };
   const onKeyPress = (event) => {
-    if (event.key === 'Enter') {
+    if (event.key === "Enter") {
       handleSearch();
     }
   };
