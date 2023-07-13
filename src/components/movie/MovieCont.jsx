@@ -1,12 +1,12 @@
 import React from "react";
-import MoiveList from "./MoiveList";
+import MovieList from "./MovieList";
 
 const MovieCont = ({ movies }) => {
   return (
     <div className="movie__cont container">
       <ul>
         {movies.map((movie, index) => (
-          <MoiveList key={index} movie={movie} />
+          <MovieList key={index} movie={movie} />
         ))}
       </ul>
     </div>

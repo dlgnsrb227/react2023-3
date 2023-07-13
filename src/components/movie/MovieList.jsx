@@ -1,6 +1,6 @@
 import React from "react";
 
-const MoiveList = ({ movie }) => {
+const MovieList = ({ movie }) => {
   return (
     <li>
       <a href={`https://www.themoviedb.org/movie/${movie.id}`}>
@@ -17,4 +17,4 @@ const MoiveList = ({ movie }) => {
   );
 };
 
-export default MoiveList;
+export default MovieList;
