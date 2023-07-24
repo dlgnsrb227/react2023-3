@@ -3,7 +3,7 @@
 
 ![리액트사이트 썸네일이미지](/public/assets/img/movie/react-thumb.PNG)
 
-##### 유튜브 API를 이용하여 개인 유튜브 사이트를 만들었습니다.
+##### React를 사용하여 만든 사이트입니다.
 ##### react를 사용하여 만들었으며 react의 router기능을 사용하여 부가 페이지를 만들었습니다.
 
 ### 완성된 site 주소 : [ReactSite][reactsitelink]
