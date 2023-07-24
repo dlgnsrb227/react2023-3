@@ -1,13 +1,13 @@
 # 리액트 사이트 프로젝트
 -------------------------------
 
-![리액트사이트 썸네일이미지](/public/assets/images/hoongtube_thumb.PNG)
+![리액트사이트 썸네일이미지](/public/assets/img/movie/react-thumb.PNG)
 
 ##### 유튜브 API를 이용하여 개인 유튜브 사이트를 만들었습니다.
 ##### react를 사용하여 만들었으며 react의 router기능을 사용하여 부가 페이지를 만들었습니다.
 
-### 완성된 site 주소 : [HoongTube][hoongtubelink]
-[hoongtubelink]: https://hoongtube.netlify.app/ "go hoongtube"
+### 완성된 site 주소 : [ReactSite][reactsitelink]
+[reactsitelink]: https://hoongsite-react01.netlify.app/ "go ReactSite"
 
 ------------------------------
 ## 사용 스택
